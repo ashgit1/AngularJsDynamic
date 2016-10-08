@@ -1,0 +1,119 @@
+==============
+Disadvantages:
+==============
+
+1.Not Secure:
+-------------
+Being JavaScript only framework, application written in AngularJS are not safe. 
+Server side authentication and authorization is must to keep an application secure.
+
+2. Not degradable:
+------------------
+If your application user disables JavaScript then user will just see the basic page and nothing more.
+
+=========================
+The AngularJS Components:
+=========================
+
+The AngularJS framework can be divided into following three major parts −
+
+1. ng-app − This directive defines and links an AngularJS application to HTML.
+
+2. ng-model − This directive binds the values of AngularJS application data to HTML input controls.
+
+3. ng-bind − This directive binds the AngularJS Application data to HTML tags.
+
+=====================
+AngularJS directives:
+=====================
+
+They are extended HTML attributes starting with prefix 'ng-'
+ex: ng-app, ng-model and so on...
+
+======================
+AngularJS Controllers:
+======================
+
+Controllers are used to control the flow of data in the application.
+A controller is a "JavaScript object" containing attributes/properties and functions. 
+Each controller accepts $scope as a parameter which refers to the application/module 
+that controller is to control.
+
+======================
+AngularJS Modules:
+======================
+
+Modules are used to separate logics say services, controllers, application etc. 
+and keep the code clean. 
+We define modules in separate js files and name them as per the module.js file.
+
+======================
+AngularJS Services:
+======================
+
+AngularJS supports the concepts of "Separation of Concerns" using services architecture. 
+Services are javascript functions and are responsible to do a specific tasks only. 
+This makes them an individual entity which is maintainable and testable. 
+Controllers, filters can call them as on requirement basis. 
+Services are normally injected using dependency injection mechanism of AngularJS.
+ex:  $http, $route, $window, $location etc.
+There are two ways to create a service:
+---------------------------------------
+factory
+service
+
+=====================
+Dependency Injection:
+=====================
+
+Dependency Injection is a software design pattern in which components are given
+their dependencies instead of hard coding them within the component. 
+
+It provides following core components which can be injected into each other as dependencies.
+value, factory, service, provider, constant
+
+value:
+------
+value is simple javascript object and it is used to pass values to controller during config phase.
+
+factory:
+--------
+factory is a function which is used to return value. 
+It creates value on demand whenever a service or controller requires.
+
+service:
+--------
+service is a singleton javascript object containing a set of functions to perform certain tasks. 
+Services are defined using service() functions and then injected into controllers
+
+provider:
+---------
+provider is used by AngularJS internally to create services, factory etc. 
+during config phase(phase during which AngularJS bootstraps itself). 
+Provider is a special factory method with a method get() which is used to return the value/service/factory.
+
+constant:
+---------
+constants are used to pass values at config phase considering the fact that 
+value can not be used to be passed during config phase.
+
+=====================
+Custom Directives:
+=====================
+
+Custom directives are used in AngularJS to extend the functionality of HTML. 
+Custom directives are defined using "directive" function. 
+A custom directive simply replaces the element for which it is activated.
+Todo.
+
+=====================
+Internationalization:
+=====================
+
+AngularJS supports inbuilt internationalization for three types of filters currency, date and numbers. 
+We only need to incorporate corresponding js according to locale of the country
+
+
+
+
+
